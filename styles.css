@@ -1,6 +1,7 @@
 body {
 background-color: black;
-font-family: 'Roboto', sans-serif;
+color: #f7f2ef;
+font-family: 'Oswald', sans-serif;
 -webkit-overflow-scrolling: touch;
 scroll-behavior: smooth;
 overflow-x: scroll;
@@ -26,7 +27,6 @@ video#bgvid {
 .title {
     margin-top: 9em;
     margin-left: 1em;
-    color: white;
     font-family: 'Droid Serif', serif;
     font-style: italic;
     font-weight: lighter;
@@ -34,39 +34,39 @@ video#bgvid {
 }
 
 li {
+    margin-left: 1em;
     list-style-type: none;
-    margin: .5em;
+    display: inline;
 }
 li > a{
-    margin-left: 1em;
-    margin-top: 0.5em;
-    color: white;
-    font-family: sans-serif;
+    color: #f7f2ef;
+    margin-left: 0em;
     font-style: italic;
-    font-size: 1.8em;
+    font-size: 1.2em;
     text-decoration: none;
 }
 
+
 nav {
-    margin-top: -1em;
+    margin-top: -3em;
+    margin-left: 5em;
 }
 
 .media-titles {
     text-align: left !important;
-    color: white;
     margin: .8em;
     padding-top: 2em;
 }
 
 .section {
     margin: 0 auto;
-    margin-top: 15em;
+    margin-top: 8em;
     background-color:rgba(1,20,15,.6);
     max-width: 99.5%;
     height: auto;
 }
 .about-section {
-    margin-top: 15em;
+    margin-top: 20em;
 }
 
 .media-section {

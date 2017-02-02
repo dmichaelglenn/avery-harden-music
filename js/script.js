@@ -1,4 +1,7 @@
+if (window.matchMedia("screen and (min-width: 600px)")){
+    document.getElementById('bgvidsrc').setAttribute('src', 'avery.mp4');
 
+};
 /**
  *
  * Created by Borbás Geri on 12/17/13

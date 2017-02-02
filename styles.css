@@ -2,6 +2,7 @@ body {
 background-color: black;
 color: #f7f2ef;
 font-family: 'Oswald', sans-serif;
+text-transform: uppercase;
 -webkit-overflow-scrolling: touch;
 scroll-behavior: smooth;
 overflow-x: scroll;
@@ -66,7 +67,7 @@ nav {
     height: auto;
 }
 .about-section {
-    margin-top: 20em;
+    margin-top: 28em;
 }
 
 .media-section {
@@ -99,9 +100,9 @@ height: 100%;
 .bio {
     font-size: 1em;
     font-size: 1.5em;
-    font-style: italic;
     margin-left: 3em;
     margin-right: 3em;
+    padding-top: 2em;
     padding-bottom: 2em;
     color: white;
     opacity: 0.8;
@@ -110,4 +111,7 @@ height: 100%;
 .yt {
     margin: 1em;
     display: inline;
+}
+.tour-widget {
+    padding-bottom: 2.5em;
 }

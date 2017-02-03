@@ -8,12 +8,12 @@
 
     <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400i|Oswald" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <script src="./js/script.js"></script>
+
 </head>
 <body>
     <video playsinline autoplay muted loop data-media="screen and (min-width: 600px)" poster="avery.mp4" id="bgvid">
         <!-- <source src="polina.webm" type="video/webm"> -->
-        <source id="bgvidsrc" src="avery.png" type="png">
+        <source id="bgvidsrc" src="avery.mp4" type="video/mp4">
     </video>
     </div>
 
@@ -34,9 +34,9 @@
     <section>
         <div class="section about-section">
             <span id="about"></span>
-        <p class="bio text-center">Growing up in the streets of Las Vegas Avery Harden was influenced by the heavy hip hop culture being inspired by such artist as Lupe Fiasco, Common and Mos Def. At the age of 16 Avery found himself writing verses about hope and bringing a change to his generation.
+        <p class="bio text-center">Growing up in the streets of Las Vegas, Avery Harden was influenced by the heavy hip hop culture being inspired by such artist as Lupe Fiasco, Common and Mos Def. At the age of 16 Avery found himself writing verses about hope and bringing a change to his generation.
         <br><br>
-        At the age of 18 Avery moved to Los Angeles, CA to pursue his dreams in music. Today Avery Harden's voice is heard all over the world in such countries as Sweden, Canada, Africa, Dubai, Australia, and the United States.</p>
+        At the age of 18 Avery moved to Los Angeles, CA to pursue his dreams in music. Today, Avery Harden's voice is heard all over the world in such countries as Sweden, Canada, Africa, Dubai, Australia, and the United States.</p>
         </div>
     </section>
     <section>
@@ -48,7 +48,7 @@
             <div class="video-wrap">
                 <div class="video-container"><iframe class="yt" width="560" height="315" src="https://www.youtube.com/embed/1dDA698vWTE" frameborder="0" allowfullscreen></iframe></div>
             </div>
-            <h2><a href="https://www.youtube.com/channel/UC9LDaiY4R8z5FkhajpJfhtQ">VIEW MORE ON YOUTUBE</a></h2>
+            <h2><a href="https://www.youtube.com/channel/UC9LDaiY4R8z5FkhajpJfhtQ" id="yt-link">VIEW MORE ON YOUTUBE</a></h2>
             <h2 class="media-titles">//SOUNDCLOUD</h2>
             <div class="sc-wrap">
                 <iframe width="90%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/11206066&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
@@ -65,17 +65,18 @@
     </section>
     <section>
         <div class="section connect-section" id="connect">
-            <h2>//SOCIAL MEDIA</h2>
-            <ul>
+            <h2 class="media-titles">//SOCIAL MEDIA</h2>
+            <ul class="social-links">
                 <li><a href="instrgram.com">INSTAGRAM</a></li>
                 <li><a href="facebook.com">FACEBOOK</a></li>
                 <li><a href="http://noisetrade.com/averyharden/">NOISETRADE</a></li>
             </ul>
-            <h2>For booking and all other inquiries:</h2>
-            <h3><a href="mailto:booking@averyhardenmusic.com">EMAIL</a></h3>
+            <h2 class="media-titles">//For booking and all other inquiries:</h2>
+            <h2 id="email-link"><a class="social-links" href="mailto:booking@averyhardenmusic.com" id="email-fix">EMAIL</a></h2>
         </div>
     </section>
 </body>
+    <script src="./js/script.js"></script>
 <!-- <script
   src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
   integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="

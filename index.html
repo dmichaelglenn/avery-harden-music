@@ -8,21 +8,20 @@
 
     <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400i|Oswald" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-
 </head>
 <body>
     <video playsinline autoplay muted loop data-media="screen and (min-width: 600px)" poster="avery.mp4" id="bgvid">
         <!-- <source src="polina.webm" type="video/webm"> -->
         <source id="bgvidsrc" src="avery.mp4" type="video/mp4">
     </video>
-    </div>
-
+    <a href="#" onclick="EPPZScrollTo.scrollVerticalToElementById('top',100);"><img class="up-arrow" src="./uparrow2.png" alt="to the top"></a>
     <section>
+      <span id="top"></span>
         <div class="title">
             <h1>AVERY HARDEN</h1>
         </div>
         <nav class="nav-links">
-            <ul>
+            <ul class="nav-ul">
                 <li><a href="#" onclick="EPPZScrollTo.scrollVerticalToElementById('about',100);">ABOUT</a></li>
                 <li><a href="#" onclick="EPPZScrollTo.scrollVerticalToElementById('media',100);">MEDIA</a></li>
                 <li><a href="#" onclick="EPPZScrollTo.scrollVerticalToElementById('tour',100);">TOUR</a></li>
@@ -48,7 +47,7 @@
             <div class="video-wrap">
                 <div class="video-container"><iframe class="yt" width="560" height="315" src="https://www.youtube.com/embed/1dDA698vWTE" frameborder="0" allowfullscreen></iframe></div>
             </div>
-            <h2><a href="https://www.youtube.com/channel/UC9LDaiY4R8z5FkhajpJfhtQ" id="yt-link">VIEW MORE ON YOUTUBE</a></h2>
+            <h2><a href="https://www.youtube.com/channel/UC9LDaiY4R8z5FkhajpJfhtQ" class="yt-link">VIEW MORE ON YOUTUBE</a></h2>
             <h2 class="media-titles">//SOUNDCLOUD</h2>
             <div class="sc-wrap">
                 <iframe width="90%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/11206066&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
@@ -73,6 +72,11 @@
             </ul>
             <h2 class="media-titles">//For booking and all other inquiries:</h2>
             <h2 id="email-link"><a class="social-links" href="mailto:booking@averyhardenmusic.com" id="email-fix">EMAIL</a></h2>
+        </div>
+    </section>
+    <section>
+        <div class="section footer-section">
+            <h2 class="media-titles">//Design by <a href="http://dmichaelglenn.com" class="yt-link">D. Michael Glenn</a></h2>
         </div>
     </section>
 </body>

@@ -1,6 +1,8 @@
 if (window.matchMedia("screen and (min-width: 600px)")){
-    document.getElementById('bgvidsrc').setAttribute('src', 'avery.mp4');
 
+  document.getElementById('bgvidsrc').setAttribute('src', 'avery.mp4');
+} else {
+  document.getElementById('bgvidsrc').setAttribute('src', 'null');
 };
 /**
  *

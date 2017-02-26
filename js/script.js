@@ -1,3 +1,9 @@
+var loaded = function() {
+    console.log("it loaded");
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("loader-wait").style.display = "block";
+};
+
 if (window.matchMedia("screen and (min-width: 600px)")){
     document.getElementById('bgvidsrc').setAttribute('src', 'avery.mp4');
 

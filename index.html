@@ -9,12 +9,12 @@
     <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400i|Oswald" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <video playsinline autoplay muted loop data-media="screen and (min-width: 600px)" poster="avery.mp4" id="bgvid">
-        <!-- <source src="polina.webm" type="video/webm"> -->
-        <source id="bgvidsrc" src="avery.mp4" type="video/mp4">
-    </video>
-    <a href="#" onclick="EPPZScrollTo.scrollVerticalToElementById('top',100);"><img class="up-arrow" src="./uparrow2.png" alt="to the top"></a>
+<body onload="loaded();">
+    <script type="text/javascript" src="./js/cashjs/cashmusic.js" data-options="lightboxvideo"></script>
+    <div id="loader"></div>
+    <div id="loader-wait">
+    <video playsinline autoplay muted loop data-mp4="./resources/avery.mp4" id="bgvid" class="bg-video-show"></video>
+    <a href="#" onclick="EPPZScrollTo.scrollVerticalToElementById('top',100);"><img class="up-arrow" src="./resources/uparrow2.png" alt="to the top"></a>
     <section>
       <span id="top"></span>
         <div class="title">
@@ -42,10 +42,8 @@
         <div class="section media-section" id="media">
             <h2 class="media-titles">//VIDEOS</h2>
             <div class="video-wrap">
-                <div class="video-container"><iframe class="yt" width="560" height="315" src="https://www.youtube.com/embed/1A4b90JWtTI" frameborder="0" allowfullscreen></iframe></div>
-            </div>
-            <div class="video-wrap">
-                <div class="video-container"><iframe class="yt" width="560" height="315" src="https://www.youtube.com/embed/1dDA698vWTE" frameborder="0" allowfullscreen></iframe></div>
+                <div class="video-container"><a href="https://www.youtube.com/watch?v=1A4b90JWtTI"><img class="vid-thumbnail" src="./resources/400degrees.jpg" alt="Hope Man"></a></div>
+                <div class="video-container"><a href="https://www.youtube.com/watch?v=1dDA698vWTE"><img class="vid-thumbnail" src="./resources/hopeman.jpg" alt="Hope Man"></a></div>
             </div>
             <h2><a href="https://www.youtube.com/channel/UC9LDaiY4R8z5FkhajpJfhtQ" class="yt-link">VIEW MORE ON YOUTUBE</a></h2>
             <h2 class="media-titles">//SOUNDCLOUD</h2>
@@ -58,7 +56,7 @@
         <div class="section tour-section" id="tour">
         <h2 class="media-titles">//UPCOMING DATES</h2>
             <div class="tour-widget">
-                <script type='text/javascript' src='http://widget.bandsintown.com/javascripts/bit_widget.js'></script><a href="http://www.bandsintown.com/Bon%20Iver" class="bit-widget-initializer" data-artist="Bon Iver" data-text-color="white" data-link-color="#f2c6ce">Bon Iver Tour Dates</a>
+                <script type='text/javascript' src='http://widget.bandsintown.com/javascripts/bit_widget.js'></script><a href="http://www.bandsintown.com/Avery%20Harden" class="bit-widget-initializer" data-artist="Avery Harden" data-text-color="white" data-link-color="#f2c6ce">Avery Harden Tour Dates</a>
             </div>
         </div>
     </section>
@@ -79,10 +77,8 @@
             <h2 class="media-titles">//Design by <a href="http://dmichaelglenn.com" class="yt-link">D. Michael Glenn</a></h2>
         </div>
     </section>
+</div>
 </body>
     <script src="./js/script.js"></script>
-<!-- <script
-  src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
-  integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
-  crossorigin="anonymous"></script> -->
+
 </html>

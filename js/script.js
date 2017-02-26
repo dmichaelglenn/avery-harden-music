@@ -1,9 +1,28 @@
-if (window.matchMedia("screen and (min-width: 600px)")){
-
-  document.getElementById('bgvidsrc').setAttribute('src', 'avery.mp4');
-} else {
-  document.getElementById('bgvidsrc').setAttribute('src', 'null');
+var loaded = function() {
+    console.log("it loaded");
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("loader-wait").style.display = "block";
 };
+
+if (window.matchMedia("(min-width: 640px)").matches) {
+   var video = document.getElementById('bgvid');
+   video.src = "./resources/avery.mp4";
+   console.log(video);
+// } else {
+//    var video = document.querySelectorAll('.video-js'),
+//        videoFile;
+//    for (var i = 0; i < videos.length; i++) {
+//       // Choose video type
+//       if (video[i].canPlayType("video/mp4") === "probably") {
+//          videoFile = video[i].getAttribute("data-mp4");
+//       }
+//       // do the same check for WebM here...
+//       video[i].src = videoFile;
+//       // Call whatever reload or refresh method video.js has
+//       // for example...
+//       video[i].refresh();
+//    }
+}
 /**
  *
  * Created by Borbás Geri on 12/17/13
